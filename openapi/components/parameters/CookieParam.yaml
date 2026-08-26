@@ -1,7 +1,7 @@
-name: Set-Cookie
+name: Cookie
 in: header
 description: "Refresh token cookie (declared for generator/backend). Clients normally send Cookie header; backend expects this header declared."
-required: false
+required: true
 schema:
   type: string
   example: "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...; Path=/auth/refresh; HttpOnly; Secure; SameSite=Strict; Max-Age=604800"
