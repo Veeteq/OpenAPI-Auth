@@ -7,7 +7,7 @@ post:
   security:
     - bearerAuth: []
   parameters:
-    - $ref: '../components/parameters/SetCookieParam.yaml'
+    - $ref: '../components/parameters/CookieParam.yaml'
   responses:
     '204':
       description: Logout successful   

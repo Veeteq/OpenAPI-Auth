@@ -6,7 +6,7 @@ post:
   operationId: refreshToken
   security: []
   parameters:
-    - $ref: '../components/parameters/SetCookieParam.yaml'
+    - $ref: '../components/parameters/CookieParam.yaml'
   responses:
     '200':
       description: Token refreshed successfully
