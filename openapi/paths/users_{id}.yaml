@@ -51,7 +51,7 @@ put:
     content:
       application/json:
         schema:
-          $ref: '../components/schemas/UserRegistration.yaml'
+          $ref: '../components/schemas/UserUpdate.yaml'
     description: Updated user object
     required: true
   responses:

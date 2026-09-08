@@ -31,14 +31,16 @@ paths:
     $ref: './paths/auth_login.yaml'
   '/auth/logout':
     $ref: './paths/auth_logout.yaml'
-  '/auth/register':
-    $ref: './paths/auth_register.yaml'
   '/auth/refresh':
     $ref: './paths/auth_refresh.yaml'
+  '/auth/register':
+    $ref: './paths/auth_register.yaml'
   '/users':
     $ref: 'paths/users.yaml'
   '/users/{id}':
     $ref: 'paths/users_{id}.yaml'
+  '/users/{id}/roles':
+    $ref: 'paths/users_{id}_roles.yaml'
 components:
   securitySchemes:
     bearerAuth:
