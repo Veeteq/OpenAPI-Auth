@@ -2,17 +2,13 @@ type: object
 required:
   - firstName
   - lastName
-  - username  
-  - password
 properties:
   firstName:
     type: string
   lastName:
     type: string
-  username:
-    type: string
   email:
     type: string  
-  password:
-    type: string
-    format: password
+  enabled:
+    type: boolean
+    default: true  

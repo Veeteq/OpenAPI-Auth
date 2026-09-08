@@ -1,0 +1,43 @@
+put:
+  tags:
+    - Admin
+  summary: Assign roles to a user
+  description: "This operation allows users to assign roles to themselves. The roles can be assigned to the user by specifying the role name in the request body."
+  operationId: assignRolesToUser
+  security:
+    - bearerAuth: []
+  parameters:
+    - name: id
+      in: path
+      description: "The name of the user profile to be **updated**."
+      required: true
+      schema:
+        type: integer
+        format: int64
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: '../components/schemas/UserRoles.yaml'
+    description: Updated user object
+    required: true
+  responses:
+    '200':
+      description: Successfully updated the user profile
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/UserResponse.yaml'
+    '400':
+      description: Invalid username provided
+      $ref: ../components/responses/BadRequest_400.yaml
+    '404':
+      description: User not found
+      $ref: ../components/responses/NotFound_404.yaml
+    '405':
+      description: Method not allowed
+      content:
+        application/json:
+          example:
+            status: 405
+            message: Not allowed
