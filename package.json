@@ -1,0 +1,13 @@
+{
+  "name": "auth-openapi",
+  "version": "1.0.0",
+  "dependencies": {
+    "@redocly/cli": "2.51.2"
+  },
+  "private": true,
+  "scripts": {
+    "start": "redocly preview-docs --port=8181",
+    "build": "redocly bundle -o dist/bundle.yaml",
+    "test": "redocly lint"
+  }
+}
