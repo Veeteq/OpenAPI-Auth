@@ -21,6 +21,6 @@ properties:
     description: "A flag indicating whether the user is enabled or not."
   roles:
     type: array
-    items:
-      type: string
-    description: "An array of roles for the user."
+    description: "The roles assigned to the user."
+    items: 
+      $ref: 'UserRole.yaml'
