@@ -14,7 +14,6 @@ properties:
     description: "The user object."
   roles:
     type: array
-    items:
-      type: string
-    description: "The roles of the user."
-    example: ["ROLE_ADMIN", "ROLE_USER"]
+    description: "The roles assigned to the user."
+    items: 
+      $ref: 'UserRole.yaml'

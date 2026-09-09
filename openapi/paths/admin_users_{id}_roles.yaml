@@ -9,7 +9,7 @@ put:
   parameters:
     - name: id
       in: path
-      description: "The name of the user profile to be **updated**."
+      description: "ID of the user for whom to assign roles."
       required: true
       schema:
         type: integer
